@@ -1,0 +1,72 @@
+
+<!doctype html>
+<html lang="ja">
+<head>
+    <script language="JavaScript">
+        setTimeout("location.reload(true)",30*1000);
+    </script>
+    <!-- Required meta tags -->
+    <meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!--meta http-equiv="refresh" content="60; URL="-->
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
+    <script src="./mychart.js"></script>
+
+    <title>混雑状況</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <!--input type="button" value="このページを再読込します" onclick="window.location.reload();"-->
+        <p style="font-size: 4.2vw; padding-top:10px;text-align: center;"><strong>2021/10/12 08:24:00 ~ 2021/10/12 08:25:00</strong>
+        <div>
+            <div style="font-size: 5vw;text-align: center;"><strong>快適に過ごせそう</strong></div>
+            <img src="../img/1.png" class="img-fluid mx-auto d-block" style="padding-left:5vw;padding-right: 5vw;">
+            <div class="row" style="padding-bottom: 10px;">
+                <div class="col" style="font-size: 2vw;text-align: center;">
+                  0~9人：空いている
+                </div>
+                <div class="col" style="font-size: 2vw;text-align: center;">
+                  10~19人：やや混雑
+                </div>
+                <div class="col" style="font-size: 2vw;text-align: center;">
+                  20人~：混雑
+                </div>
+            </div>
+            <div style="font-size: 5px;text-align: end;">※対象時間内において、カメラが検知した人数（秒間での平均人数）の元、上記閾値にて混雑判定を実施。</div>
+            <div style="padding:10px">
+                <table class="table table-sm" style="text-align: center;font-size: 3vw;">
+                    <thead>
+                    <tr>
+                        <th scope="col">平均人数</th>
+                        <th scope="col">最大人数</th>
+                        <th scope="col">最小人数</th>
+                        <th scope="col">平均滞在時間</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>0.0人 / 秒</td>
+                        <td>0人 / 秒</td>
+                        <td>0人 / 秒</td>
+                        <td>0.0秒</td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <div class="chart-container" style="position: relative; ">
+            <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
+        </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+    
