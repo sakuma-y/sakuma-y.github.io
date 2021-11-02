@@ -16,57 +16,48 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js" integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI=" crossorigin="anonymous"></script>
     <script src="./mychart.js"></script>
 
-    <title>混雑状況</title>
+    <title>混雑状況イメージ</title>
 </head>
 <body>
     <div class="container-fluid">
         <!--input type="button" value="このページを再読込します" onclick="window.location.reload();"-->
-        <p style="font-size: 4.2vw; padding-top:10px;text-align: center;"><strong>2021/11/02 19:46:00 ~ 2021/11/02 19:47:00</strong>
+        <p style="font-size: 4.2vw; padding-top:10px;text-align: center;"><strong>2021-11-02 14:18:33 ~ 2021/10/22 18:15:00</strong>
         <div>
-            <div style="font-size: 5vw;text-align: center;"><strong>快適に過ごせそう</strong></div>
-            <img src="../img/1.png" class="img-fluid mx-auto d-block" style="padding-left:5vw;padding-right: 5vw;">
-            <div class="row" style="padding-bottom: 10px;">
-                <div class="col" style="font-size: 2vw;text-align: center;">
-                  0~9人：空いている
+            <div style="font-size: 5vw;text-align: center;"><strong>混雑状況イメージ</strong></div>
+            <div style="position:relative; top:0; left:50%; transform: translateX(-50%); -webkit-transform: translateX(-50%); -ms-transform: translateX(-50%)">
+                <img src="../img/parks_main.jpg" width="1280px height=720px" style="margin: 0 auto">
+                
+                <div style="position:absolute; top:370.0px; left:70.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
                 </div>
-                <div class="col" style="font-size: 2vw;text-align: center;">
-                  10~19人：やや混雑
+        
+                <div style="position:absolute; top:376.0px; left:186.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
                 </div>
-                <div class="col" style="font-size: 2vw;text-align: center;">
-                  20人~：混雑
+        
+                <div style="position:absolute; top:364.0px; left:292.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
                 </div>
+        
+                <div style="position:absolute; top:342.0px; left:374.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
+                </div>
+        
+                <div style="position:absolute; top:346.0px; left:428.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
+                </div>
+        
+                <div style="position:absolute; top:346.0px; left:428.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
+                </div>
+        
+                <div style="position:absolute; top:346.0px; left:428.0px"> 
+                <img src=../img/human.jpg width="80px" height="100px" border="4px">
+                </div>
+        
             </div>
-            <div style="font-size: 5px;text-align: end;">※対象時間内において、カメラが検知した人数（秒間での平均人数）の元、上記閾値にて混雑判定を実施。</div>
-            <div style="padding:10px">
-                <table class="table table-sm" style="text-align: center;font-size: 3vw;">
-                    <thead>
-                    <tr>
-                        <th scope="col">平均人数</th>
-                        <th scope="col">最大人数</th>
-                        <th scope="col">最小人数</th>
-                        <th scope="col">平均滞在時間</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>0.45人 / 秒</td>
-                        <td>2人 / 秒</td>
-                        <td>1人 / 秒</td>
-                        <td>13.5秒</td>
-                    </tr>
-                    </tbody>
-                </table>
-            </div>
-        </div>
-        <div class="chart-container" style="position: relative; ">
-            <canvas id="myChart" style="width: 100%; height: auto;"></canvas>
         </div>
     </div>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
 </html>
     
