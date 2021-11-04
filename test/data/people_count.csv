@@ -1,4 +1,2 @@
 congestion_detection_starttime	congestion_detection_finishtime	numPeoplePerSec_ave	numPeoplePerSec_max	numPeoplePerSec_min	staytime_ave	staytime_max	staytime_min	human_unique_count
-2021/11/02 20:56:00	2021/11/02 20:57:00	0.0	0	0	0.0	0	0	0
-2021/11/02 20:57:00	2021/11/02 20:58:00	0.06666666666666667	1	1	4.0	4	4	1
-2021/11/02 20:58:00	2021/11/02 20:59:00	0.5333333333333333	2	1	10.666666666666666	13	7	3
+2021/11/04 16:23:00	2021/11/04 16:24:00	0.0	0	0	0.0	0	0	0
